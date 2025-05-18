@@ -5,7 +5,7 @@ const Blogs = () => {
 
   useEffect(() => {
     async function fetchBlogs() {
-      const res = await fetch("http://localhost:5000/blogs", {
+      const res = await fetch("https://blog-backend-01vx.onrender.com/blogs", {
         headers: { Authorization: "Bearer " + localStorage.getItem("token") },
       });
       const data = await res.json();

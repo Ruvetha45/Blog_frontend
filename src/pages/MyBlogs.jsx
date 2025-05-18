@@ -10,7 +10,7 @@ const MyBlogs = () => {
   useEffect(() => {
     const fetchMyBlogs = async () => {
       try {
-        const response = await fetch("http://localhost:5000/blogs/myblogs", {
+        const response = await fetch("https://blog-backend-01vx.onrender.com/blogs/myblogs", {
           headers: {
             "Content-Type": "application/json",
             Authorization: "Bearer " + token,
@@ -40,7 +40,7 @@ const MyBlogs = () => {
   const handleDelete = async (id) => {
     if (window.confirm("Are you sure you want to delete this blog?")) {
       try {
-        const response = await fetch(`http://localhost:5000/blogs/${id}`, {
+        const response = await fetch(`https://blog-backend-01vx.onrender.com/blogs/${id}`, {
           method: "DELETE",
           headers: {
             Authorization: "Bearer " + token,

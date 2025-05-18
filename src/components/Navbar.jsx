@@ -37,7 +37,7 @@ const Navbar = () => {
                   <Link className="nav-link nav-hover" to="/allblogs">All Blogs</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link nav-hover" to="/create">Create</Link>
+                  <Link className="nav-link nav-hover" to="/create">Create Blogs</Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link nav-hover" to="/myblogs">My Blogs</Link>
